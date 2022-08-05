@@ -9,7 +9,7 @@ class MaxHeap {
         size = 0;
     }
     // function to insert into the heap...
-    static void insert(int x){
+    void insert(int x){
         arr[size++] = x;
         int i = size-1;
         while(i >= 1){
@@ -25,7 +25,7 @@ class MaxHeap {
         }
     }
     // printing the max heap
-    static void print(int arr[]){
+    void print(int arr[]){
         for(int i : arr)
             System.out.print(i+" "); 
     }
